@@ -230,7 +230,9 @@ section:nth-child(2) > ul >li:nth-child(5) {
   margin-left: .5rem;
 }
 
-@media screen and (max-width: 480px) {
+/* Smartphones */
+@media only screen and (max-width: 767px) {
+  /* Your CSS styles for smartphones */
   body{
     background: var(--White);
   }
