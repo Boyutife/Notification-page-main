@@ -1,0 +1,259 @@
+:root{
+  /* Neutral */
+ --White: hsl(0, 0%, 100%);
+--Very-light-grayish-blue: hsl(210, 60%, 98%);
+--Light-grayish-blue-1: hsl(211, 68%, 94%);
+--Light-grayish-blue-2: hsl(205, 33%, 90%);
+--Grayish-blue: hsl(219, 14%, 63%);
+--Dark-grayish-blue: hsl(219, 12%, 42%);
+--Very-dark-blue: hsl(224, 21%, 14%);
+
+--Light-grayish-blue-3: #dde7eec8;
+
+/* Primary */
+--Red: hsl(1, 90%, 64%);
+--Blue: hsl(219, 85%, 26%);
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  box-sizing: border-box;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background:#deeefa7d;
+}
+
+p{
+  font-size: .75rem;
+  color: var(--Grayish-blue);
+}
+
+h1{
+  margin-right: .75rem;
+  font-size: 1rem;
+}
+
+
+main{
+  max-width: 31vw;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  border-radius: 1rem;
+  background: var(--White);
+}
+
+section:first-child{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+section:first-child > div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+section:first-child > p{
+  cursor: pointer;
+  transition: all .3s ease;
+}
+
+section:first-child > p:active{
+  color: var(--Blue);
+}
+
+section:nth-child(2) > ul > li {
+  padding: .5rem .5rem;
+  list-style: none;
+  margin-bottom: .5rem;
+  border-radius: 1rem;
+  background: var(--White);
+}
+
+section:nth-child(2) > ul > li:first-child,
+section:nth-child(2) > ul >li:nth-child(2),
+section:nth-child(2) > ul >li:nth-child(3){
+  background:#deeefa7d;
+}
+
+section:nth-child(2) > ul > li:first-child,
+section:nth-child(2) > ul >li:nth-child(2),
+section:nth-child(2) > ul >li:nth-child(3),
+section:nth-child(2) > ul >li:nth-child(6),
+section:nth-child(2) > ul >li:nth-child(7){
+  display: grid;
+  grid-template-columns: 1fr 10fr;
+}
+
+.num{
+  font-size: .65rem;
+  text-align: center;
+  height: .75rem;
+  width: 1rem;
+  padding: .2rem;
+  border-radius: 20%;
+  color: var(--White);
+  background: var(--Blue);
+}
+
+.name{
+  font-weight: 800;
+  color: var(--Very-dark-blue);
+  cursor: pointer;
+  transition: all .3s ease;
+}
+
+.name:active{
+  color: var(--Blue);
+}
+
+.dark_gray{
+  color: var(--Dark-grayish-blue);
+  font-weight: 700;
+  cursor: pointer;
+  transition: all .3s ease;
+}
+
+.dark_gray:active{
+  color: var(--Blue);
+}
+
+/* .flex_dot{
+  display: flex;
+  align-items: center;
+} */
+
+.dot{
+  margin-left: .25rem;
+  display: inline-block;
+  height: .5rem;
+  width: .5rem;
+  border-radius: 50%;
+  background: var(--Red);
+}
+
+.circle {
+  height: 2rem;
+  width: 2rem;
+  border-radius: 50%;
+  margin-right: .75rem;
+}
+
+.chess{
+  color: var(--Blue);
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.mark{
+  background: url(../assets/images/avatar-mark-webber.webp) no-repeat center center/cover;
+}
+
+.mark_li{
+  
+}
+
+.angela{
+  background: url(../assets/images/avatar-angela-gray.webp) no-repeat center center/cover;
+}
+
+.angela_li{
+  padding-left: 1rem;
+}
+
+.jacob{
+  background: url(../assets/images/avatar-jacob-thompson.webp) no-repeat center center/cover;
+}
+
+.rizky{
+  background: url(../assets/images/avatar-rizky-hasanuddin.webp) no-repeat center center/cover;
+}
+
+section:nth-child(2) > ul >li:nth-child(4) {
+    display: grid;
+    grid-template-columns: .25fr 3fr ;
+    grid-template-rows: 1fr ;
+}
+
+.txt_box{
+  margin-top: .5rem;
+  border: .06rem solid ;
+  padding: .5rem;
+  background: var(--White);
+  cursor: pointer;
+  transition: all .3s ease;
+}
+
+.txt_box:active{
+  border: none;
+  background: var(--Light-grayish-blue-1);
+}
+
+.kimberly{
+  background: url(../assets/images/avatar-kimberly-smith.webp) no-repeat center center/cover;
+}
+
+section:nth-child(2) > ul >li:nth-child(5) {
+  display: grid;
+  grid-template-columns: .25fr 2fr .25fr ;
+  grid-template-rows: 1fr ;
+}
+
+.nathan{
+  background: url(../assets/images/avatar-nathan-peterson.webp) no-repeat center center/cover;
+}
+
+.anna{
+  background: url(../assets/images/avatar-anna-kim.webp) no-repeat center center/cover;
+}
+
+.img_chess{
+  background: url(../assets/images/image-chess.webp) no-repeat center center/cover;
+}
+
+.squircle{
+  height: 2rem;
+  width: 2rem;
+  border-radius: 20%;
+  justify-self: flex-end;
+  cursor: pointer;
+  margin-left: .5rem;
+}
+
+@media screen and (max-width: 376px) {
+  body{
+    background: var(--White);
+  }
+  main{
+    min-height: 90vh;
+    min-width: 85vw;
+    padding: 0;
+  }
+
+  section:nth-child(2) > ul > li {
+    margin-bottom: .6rem;
+  }
+
+  .circle {
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    margin-right: .75rem;
+  }
+
+}
+
+.attribution {
+  display: none;
+  font-size: 11px; text-align: center; }
+ .attribution a {  color: hsl(228, 45%, 44%); }
