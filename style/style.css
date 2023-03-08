@@ -230,7 +230,7 @@ section:nth-child(2) > ul >li:nth-child(5) {
   margin-left: .5rem;
 }
 
-@media screen and (max-width: 376px) {
+@media screen and (max-width: 480px) {
   body{
     background: var(--White);
   }
@@ -257,3 +257,6 @@ section:nth-child(2) > ul >li:nth-child(5) {
   display: none;
   font-size: 11px; text-align: center; }
  .attribution a {  color: hsl(228, 45%, 44%); }
+
+
+  
