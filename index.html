@@ -16,14 +16,14 @@
     <section>
       <div>
         <h1>Notifications </h1>
-        <span class="num">3</span>
+        <span class="num">4</span>
       </div>
-      <p>Mark all as read</p>
+      <p class="read_all">Mark all as read</p>
     </section>
     <section>
-      <ul>
+      <ul class="">
         <!-- Mark Webber -->
-        <li class="mark_li">
+        <li class="mark_li unread">
           <!-- <div class='circle'></div> -->
           <div class="circle mark"></div>
           <div>
@@ -32,7 +32,7 @@
           </div>
         </li>
         <!-- Angela Gray -->
-        <li  class="angela_li">
+        <li  class="angela_li unread">
           <div class="circle angela"></div>
           <div>
             <p><span class="name">Angela Gray</span> followed you <span class="dot"></span> </p>
@@ -40,20 +40,20 @@
           </div>
         </li>
         <!-- Jacob Thompson -->
-        <li>
-          <div class='circle jacob'></div>
+        <li class="unread">
+          <div class='circle jacob '></div>
           <div>
             <p><span class="name">Jacob Thompson</span> reacted to your recent post <span class="chess ">Chess Club</span><span class="dot"></span></p>
             <p>1 day ago</p>
           </div>
         </li>
         <!-- Rizky Hasanuddin -->
-        <li class="rizky_li">
+        <li class="rizky_li unread message">
           <div class='circle rizky '></div>
           <div>
-            <p><span class="name">Rizky Hasanuddin</span> Sent you a private message</p>
+            <p><span class="name">Rizky Hasanuddin</span> Sent you a private message<span class="dot"></span></p>
             <p> 5 days ago</p>
-            <p class="txt_box">Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and 
+            <p class="txt_box  private_message">Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and 
               I'm already having lots of fun and improving my game.</p>
           </div>
         </li>
@@ -90,5 +90,7 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Boluwatife B. Aiyenibe</a>.
   </div>
+
+  <script src="./javascript/script.js"></script>
 </body>
 </html>
