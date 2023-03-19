@@ -128,7 +128,7 @@ section:nth-child(2) > ul >li:nth-child(7){
   grid-template-columns: 1fr 10fr;
 }
 
-.num{
+.notification_count{
   font-size: .65rem;
   text-align: center;
   height: .75rem;
@@ -220,8 +220,8 @@ section:nth-child(2) > ul >li:nth-child(4) {
   transition: all .3s ease;
 }
 
-.private_message{
-  display: none;;
+.private_message_modal{
+  display: none;
 }
 
 .txt_box:active{
